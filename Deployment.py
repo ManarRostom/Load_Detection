@@ -10,8 +10,8 @@ import joblib
 def Get_Log(v):
     return np.log(v.astype(float))
 
-Model = joblib.load('../Data/Model.pkl')
-Inputs = joblib.load('../Data/Inputs.pkl')
+Model = joblib.load('Model.pkl')
+Inputs = joblib.load('Inputs.pkl')
 
 def Predict(Gender, Married, Dependents, Education, Self_Employed, CoapplicantIncome, Credit_History, Property_Area, Loan_Per_Month, Income_After_Loan, Income_Exceeds_Loan):
     df_test = pd.DataFrame(columns=Inputs)
